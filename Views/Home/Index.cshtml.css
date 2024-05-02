@@ -1,0 +1,42 @@
+﻿
+img {
+    width: 100%;
+}   
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+    .content h1 {
+        font-family: 'Roboto','kollektif';
+        font-size: 60px;
+        color: #058789;
+    }
+
+    .content p {
+        font-size: 18px;
+        color: #E03F3E;
+        margin: 10px 0 30px;
+    }
+.homes {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.homes-text h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #058789;
+    font-size: 1.5rem;
+}
+.homes-text p {
+    margin: 0.5rem 0 1rem;
+}
+

@@ -1,0 +1,29 @@
+﻿@model Monitoring.Models.HealthRec
+
+<h1>Details</h1>
+
+<div>
+    <h4>Record Id: @Model.RecordId</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Height</dt>
+        <dd class="col-sm-10">@Model.Height</dd>
+        <dt class="col-sm-2">Weight</dt>
+        <dd class="col-sm-10">@Model.Weight</dd>
+        <dt class="col-sm-2">BMI</dt>
+        <dd class="col-sm-10">@Model.BMI</dd>
+        <dt class="col-sm-2">Heart Rate</dt>
+        <dd class="col-sm-10">@Model.Heart_Rate</dd>
+        <dt class="col-sm-2">Blood Pressure</dt>
+        <dd class="col-sm-10">@Model.Blood_Pressure</dd>
+        <dt class="col-sm-2">Temperature</dt>
+        <dd class="col-sm-10">@Model.Temperature</dd>
+        <dt class="col-sm-2">Date Time</dt>
+        <dd class="col-sm-10">@Model.Date_Time</dd>
+        <!-- Add more details as needed -->
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RecordId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Roboto','kollektif';
+    color: #E03F3E;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #E03F3E;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: #495057;
+}
+
+
+.footer {
+    background-color: #058789;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    .footer a {
+        color: #ffffff;
+    }
+
+content {
+    
+}
+

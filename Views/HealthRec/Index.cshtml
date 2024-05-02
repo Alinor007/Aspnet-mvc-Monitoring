@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Monitoring.Models.HealthRec>
+
+
+<h1 class="text-lg-center">Health Records</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.child)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Date_Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BMI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heart_Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blood_Pressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Temperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctor)
+            </th>
+           
+            <th>
+                <a asp-action="Create" class="btn btn-sm btn-success">
+                    <i class="fa-solid fa-plus"></i> New
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChildName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date_Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Height)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BMI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Heart_Rate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Blood_Pressure)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Temperature)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DocName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.RecordId" class="btn btn-secondary">
+                        <i class="fa-solid fa-pen-to-square"></i> 
+                    </a> |
+                    <a asp-action="Details" asp-route-id="@item.RecordId" class=" btn btn-dark">
+                        <i class="fa-solid fa-info"></i> 
+                    </a> |
+                    <a asp-action="Delete" asp-route-id="@item.RecordId" class="btn btn-danger">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
